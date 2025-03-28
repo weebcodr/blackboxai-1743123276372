@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Programs | San Diego Flight School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-gray-100 text-gray-800 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" 
+                             alt="Flight School Logo"
+                             class="h-16 w-auto object-contain hover:scale-105 transition-transform">
+                    </a>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8 items-center">
+                        <li><a href="instructors.html" class="hover:text-blue-200 transition">Instructors</a></li>
+                        <li><a href="index.html#services" class="hover:text-blue-200 transition">Services</a></li>
+                        <li><a href="index.html#contact" class="hover:text-blue-200 transition">Contact</a></li>
+                        <li>
+                            <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
+                                <i class="fas fa-phone mr-2"></i>(619) 786-7534
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Training Section -->
+    <section class="py-16 relative">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center opacity-10"></div>
+        <div class="container mx-auto px-4 relative">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Training Programs</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Private Pilot Certificate</h3>
+                    <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-1">
+                        <li>Minimum of 40 flight hours</li>
+                        <li>3rd class medical</li>
+                        <li>Pass the FAA written test</li>
+                        <li>Pass an oral and flight test</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">With this license you're able to fly anywhere in the country and take passengers. Share the joy of flight with friends and family, this license never expires with specific requirements met.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Instrument Rating</h3>
+                    <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-1">
+                        <li>Minimum of 40 hours of instrument training</li>
+                        <li>50 hours of cross country PIC</li>
+                        <li>3rd class medical</li>
+                        <li>Pass the FAA written test</li>
+                        <li>Pass an oral and flight test</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">With this rating you're no longer restricted to clear skies! Penetrate those clouds with confidence allowing for safe flying year-round. The rating never expires. However, certain obligations need to be met in order to stay current and legal to fly IFR.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Commercial Certificate</h3>
+                    <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-1">
+                        <li>Minimum of 250 total flight hours</li>
+                        <li>Single or Multi Engine Airplane</li>
+                        <li>3rd class medical</li>
+                        <li>Pass the FAA written test</li>
+                        <li>Pass an oral and flight test</li>
+                        <li>Can be an add-on to an existing commercial certificate</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">Now you're officially ready to work! You are now on your way to becoming a professional pilot. For many this is the first major step towards working in aviation. The jobs are limited but options are available to start immediately.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Certified Flight Instructor</h3>
+                    <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-1">
+                        <li>Must hold a Commercial Certificate</li>
+                        <li>Single Engine Airplane</li>
+                        <li>3rd class medical</li>
+                        <li>Pass the FAA written tests</li>
+                        <li>Pass an oral and flight test</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">For many this is the most exciting certificate yet! This is definitely the most difficult and the most rewarding accomplishment to date in your aviation career. You are now ready to share the passion of aviation with others! With this certificate employment opportunities really open up!</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Certified Flight Instructor II</h3>
+                    <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-1">
+                        <li>Must hold a Commercial Certificate</li>
+                        <li>Single or Multi Engine Airplane</li>
+                        <li>3rd class medical</li>
+                        <li>Pass the FAA written tests</li>
+                        <li>Pass an oral and flight test</li>
+                        <li>Can be an add-on to an existing CFI certificate</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">Now you are an instrument instructor. You can now offer instrument training to your flight students enhancing your employment opportunities.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Certified Flight Instructor MEI</h3>
+                    <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-1">
+                        <li>Must hold a Commercial Certificate</li>
+                        <li>Multi Engine Airplane</li>
+                        <li>3rd class medical</li>
+                        <li>Pass the FAA written tests</li>
+                        <li>Pass an oral and flight test</li>
+                        <li>Can be an add-on to an existing CFI certificate</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">Now you are a multi engine instructor. You can now offer multi engine training to your flight students enhancing your employment appeal.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Airline Transportation Pilot Certificate*</h3>
+                    <ul class="text-gray-600 mb-4 list-disc pl-5 space-y-1">
+                        <li>Meet the minimum requirement of 1500 hours</li>
+                        <li>Must hold a Commercial Certificate</li>
+                        <li>Hold an Instrument Rating</li>
+                        <li>50 hours of Multi Engine Airplane</li>
+                        <li>2nd class medical</li>
+                        <li>Pass an oral and flight test</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">With this certificate, you have met the minimums for the airlines, and can now be hired! *Must have passed the FAA written test prior to July 31, 2014 in order train under part 61 for the ATP certificate. For a further explanation please contact us today.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">San Diego Flight School</h3>
+                    <p>123 Aviation Way<br>San Diego, CA 92101</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p><i class="fas fa-phone mr-2"></i> (619) 555-1234</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@sandiegoflightschool.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hours</h3>
+                    <p>Monday - Friday: 8am - 6pm</p>
+                    <p>Saturday: 9am - 4pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 San Diego Flight School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200">
+        <ul class="space-y-4">
+            <li><a href="instructors.html" class="block hover:text-blue-200 transition">Instructors</a></li>
+            <li><a href="index.html#services" class="block hover:text-blue-200 transition">Services</a></li>
+            <li><a href="index.html#contact" class="block hover:text-blue-200 transition">Contact</a></li>
+            <li>
+                <a href="tel:6197867534" class="block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full text-center transition">
+                    <i class="fas fa-phone mr-2"></i>(619) 786-7534
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
