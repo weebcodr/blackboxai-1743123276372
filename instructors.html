@@ -15,21 +15,20 @@
 </head>
 <body class="bg-gray-50">
     <!-- Header/Navigation -->
-    <header class="bg-gray-100 text-gray-800 shadow-lg">
-        <div class="container mx-auto px-4 py-6">
+    <header class="bg-gray-100 text-gray-800 shadow-sm">
+        <div class="container mx-auto px-4 py-4 md:py-5">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
                     <a href="index.html">
                         <img src="assets/images/logo.svg" 
                              alt="Flight School Logo"
-                             class="h-16 w-auto object-contain hover:scale-105 transition-transform">
+                             class="h-14 md:h-16 w-auto object-contain hover:scale-105 transition-transform">
                     </a>
                 </div>
                 <nav class="hidden md:block">
                     <ul class="flex space-x-8 items-center">
                         <li><a href="training.html" class="hover:text-blue-200 transition">Training</a></li>
-                        <li><a href="index.html#services" class="hover:text-blue-200 transition">Services</a></li>
-                        <li><a href="index.html#contact" class="hover:text-blue-200 transition">Contact</a></li>
+                        <li><a href="reference-materials.html" class="hover:text-blue-200 transition">Reference Materials</a></li>
                         <li>
                             <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
                                 <i class="fas fa-phone mr-2"></i>(619) 786-7534
@@ -37,9 +36,14 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <div class="flex items-center space-x-4">
+                    <a href="tel:6197867534" class="md:hidden bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
+                        <i class="fas fa-phone mr-2"></i>(619) 786-7534
+                    </a>
+                    <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -94,23 +98,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-12">
+    <footer id="contact" class="bg-blue-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">San Diego Flight School</h3>
-                    <p>123 Aviation Way<br>San Diego, CA 92101</p>
+                    <h3 class="text-xl font-bold mb-4">New Vision Aviation</h3>
+                    <p>3717 John J Montgomery Dr<br>San Diego, CA 92123</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                    <p><i class="fas fa-phone mr-2"></i> (619) 555-1234</p>
-                    <p><i class="fas fa-envelope mr-2"></i> info@sandiegoflightschool.com</p>
+                    <p><i class="fas fa-phone mr-2"></i> (619) 786-7534</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@newvisionaviation.com</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Hours</h3>
-                    <p>Monday - Friday: 8am - 6pm</p>
-                    <p>Saturday: 9am - 4pm</p>
-                    <p>Sunday: Closed</p>
+                    <p>Monday - Sunday: 8am - 8pm</p>
                 </div>
             </div>
             <div class="border-t border-blue-800 mt-8 pt-8 text-center">
@@ -128,7 +130,10 @@
                         <i class="fab fa-youtube text-xl"></i>
                     </a>
                 </div>
-                <p>&copy; 2023 San Diego Flight School. All rights reserved.</p>
+                <a href="faq.html" class="inline-block bg-white hover:bg-gray-100 text-blue-900 font-medium py-2 px-6 rounded-full mb-4 transition">
+                    Frequently Asked Questions
+                </a>
+                <p>&copy; 2025 New Vision Aviation. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -137,19 +142,37 @@
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
+            menu.classList.toggle('block');
+            
+            // Close when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('#mobile-menu') && !e.target.closest('button[onclick="toggleMobileMenu()"]')) {
+                    menu.classList.add('hidden');
+                    menu.classList.remove('block');
+                }
+            });
+
+            // Close when scrolling past menu
+            let lastScrollPos = window.scrollY;
+            const scrollHandler = () => {
+                const currentScrollPos = window.scrollY;
+                const menuBottom = menu.offsetTop + menu.offsetHeight;
+                
+                if (currentScrollPos > menuBottom || Math.abs(currentScrollPos - lastScrollPos) > 50) {
+                    menu.classList.add('hidden');
+                    menu.classList.remove('block');
+                    window.removeEventListener('scroll', scrollHandler);
+                }
+                lastScrollPos = currentScrollPos;
+            };
+            window.addEventListener('scroll', scrollHandler);
         }
     </script>
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200">
-        <ul class="space-y-4">
-            <li><a href="training.html" class="block hover:text-blue-200 transition">Training</a></li>
-            <li><a href="index.html#services" class="block hover:text-blue-200 transition">Services</a></li>
-            <li><a href="index.html#contact" class="block hover:text-blue-200 transition">Contact</a></li>
-            <li>
-                <a href="tel:6197867534" class="block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full text-center transition">
-                    <i class="fas fa-phone mr-2"></i>(619) 786-7534
-                </a>
-            </li>
-        </ul>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200 fixed top-16 left-0 right-0 z-50 shadow-lg">
+                <ul class="space-y-4">
+                    <li><a href="training.html" class="block hover:text-blue-200 transition">Training</a></li>
+                    <li><a href="reference-materials.html" class="block hover:text-blue-200 transition">Reference Materials</a></li>
+                </ul>
     </div>
     <script src="instructors.js"></script>
     <script>
