@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference Materials | San Diego Flight School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-gray-100 text-gray-800 shadow-sm">
+        <div class="container mx-auto px-4 py-4 md:py-5">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" 
+                             alt="Flight School Logo"
+                             class="h-14 md:h-16 w-auto object-contain hover:scale-105 transition-transform">
+                    </a>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8 items-center">
+                        <li><a href="training.html" class="hover:text-blue-200 transition">Training</a></li>
+                        <li><a href="instructors.html" class="hover:text-blue-200 transition">Instructors</a></li>
+                        <li><a href="reference-materials.html" class="hover:text-blue-200 transition">Reference Materials</a></li>
+                        <li>
+                            <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
+                                <i class="fas fa-phone mr-2"></i>(619) 786-7534
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Reference Materials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Aviation Reference Materials</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">FAA Regulations</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://www.faa.gov/regulations_policies" class="text-blue-600 hover:underline">FAR Part 61 - Certification: Pilots, Flight Instructors</a></li>
+                        <li><a href="https://www.faa.gov/regulations_policies" class="text-blue-600 hover:underline">FAR Part 91 - General Operating Rules</a></li>
+                        <li><a href="https://www.faa.gov/regulations_policies" class="text-blue-600 hover:underline">Aeronautical Information Manual (AIM)</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">Study Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://www.faa.gov/pilots" class="text-blue-600 hover:underline">FAA Pilot's Handbook</a></li>
+                        <li><a href="https://www.faa.gov/training_testing" class="text-blue-600 hover:underline">Knowledge Test Guides</a></li>
+                        <li><a href="https://www.faa.gov/air_traffic/flight_info/aeronav" class="text-blue-600 hover:underline">Aeronautical Charts</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">Flight Training Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://www.aopa.org/training-and-safety" class="text-blue-600 hover:underline">AOPA Training Resources</a></li>
+                        <li><a href="https://www.sportys.com/pilotshop" class="text-blue-600 hover:underline">Flight Training Materials</a></li>
+                        <li><a href="https://www.faa.gov/uas" class="text-blue-600 hover:underline">Drone Pilot Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4">Weather & Planning</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://www.aviationweather.gov" class="text-blue-600 hover:underline">Aviation Weather Center</a></li>
+                        <li><a href="https://www.1800wxbrief.com" class="text-blue-600 hover:underline">Flight Service</a></li>
+                        <li><a href="https://www.faa.gov/air_traffic/flight_info" class="text-blue-600 hover:underline">NOTAMs & TFRs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">New Vision Aviation</h3>
+                    <p>3717 John J Montgomery Dr<br>San Diego, CA 92123</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p><i class="fas fa-phone mr-2"></i> (619) 786-7534</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@newvisionaviation.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hours</h3>
+                    <p>Monday - Sunday: 8am - 8pm</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="https://www.tiktok.com/@new.vision.aviati?is_from_webapp=1&sender_device=pc" target="_blank" class="text-white hover:text-gray-300">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/new_vision_aviation/" target="_blank" class="text-white hover:text-gray-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/NewVisionAviation" target="_blank" class="text-white hover:text-gray-300">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://youtube.com/channel/UCsmMwH7fEemWdk9wtccvhjQ" target="_blank" class="text-white hover:text-gray-300">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+                <a href="faq.html" class="inline-block bg-white hover:bg-gray-100 text-blue-900 font-medium py-2 px-6 rounded-full mb-4 transition">
+                    Frequently Asked Questions
+                </a>
+                <p>&copy; 2025 New Vision Aviation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200">
+        <ul class="space-y-4">
+            <li><a href="training.html" class="block hover:text-blue-200 transition">Training</a></li>
+            <li><a href="instructors.html" class="block hover:text-blue-200 transition">Instructors</a></li>
+            <li><a href="reference-materials.html" class="block hover:text-blue-200 transition">Reference Materials</a></li>
+            <li>
+                <a href="tel:6197867534" class="block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full text-center transition">
+                    <i class="fas fa-phone mr-2"></i>(619) 786-7534
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
