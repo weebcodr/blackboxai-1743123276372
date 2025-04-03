@@ -1,0 +1,23 @@
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build files
+dist/
+build/
+
+# Local Netlify folder
+.netlify
