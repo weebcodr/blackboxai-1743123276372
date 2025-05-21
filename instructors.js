@@ -1,0 +1,29 @@
+const instructors = [
+    {
+        name: "Michael Mourer",
+        credentials: "CFI, ATP",
+        photo: "assets/images/Instructors/Michael.jpg",
+        specialties: ["Private Pilot", "Instrument Rating", "Commercial Pilot"],
+        aircraft: ["Cessna 172", "Piper PA-28"],
+        bio: "John has over 15 years of experience as a flight instructor.\n\nHe is passionate about teaching and safety.",
+        bookingLink: "https://calendly.com/johndoe/lesson"
+    },
+    {
+        name: "Jane Smith",
+        credentials: "CFI, MEI",
+        photo: "assets/images/instructor-jane.jpg",
+        specialties: ["Multi-Engine", "Flight Instructor", "Commercial Pilot"],
+        aircraft: ["Beechcraft Baron", "Diamond DA42"],
+        bio: "Jane specializes in multi-engine training and advanced maneuvers.\n\nShe has a background in commercial aviation.",
+        bookingLink: "https://calendly.com/janesmith/lesson"
+    },
+    {
+        name: "Michael Brown",
+        credentials: "CFI, CFII",
+        photo: "assets/images/instructor-michael.jpg",
+        specialties: ["Instrument Rating", "Flight Instructor", "Certified Flight Instructor Instrument"],
+        aircraft: ["Cessna 182", "Cirrus SR22"],
+        bio: "Michael is an expert in instrument training and cross-country flights.\n\nHe focuses on building pilot confidence.",
+        bookingLink: "https://calendly.com/michaelbrown/lesson"
+    }
+];

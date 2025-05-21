@@ -15,29 +15,29 @@
 </head>
 <body class="bg-gray-50">
     <!-- Header/Navigation -->
-    <header class="bg-gray-100 text-gray-800 shadow-sm">
+    <header class="bg-gray-100 text-gray-800 shadow-md">
         <div class="container mx-auto px-4 py-4 md:py-5">
             <div class="flex justify-between items-center">
                 <div class="flex items-center justify-between w-full">
                     <a href="index.html">
                         <img src="assets/images/logo.svg" 
                              alt="Flight School Logo"
-                             class="h-10 md:h-12 w-auto object-contain hover:scale-105 transition-transform">
+                             class="h-14 w-auto object-contain hover:scale-105 transition-transform">
                     </a>
                     <nav class="hidden md:block ml-auto mr-8">
                     <ul class="flex space-x-8 items-center">
                         <li><a href="instructors.html" class="hover:text-blue-200 transition">Instructors</a></li>
                         <li><a href="reference-materials.html" class="hover:text-blue-200 transition">Reference Materials</a></li>
                         <li>
-                            <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-1.5 md:py-2 px-2 md:px-4 rounded-full transition whitespace-nowrap text-xs md:text-base">
-                                <i class="fas fa-phone mr-1 md:mr-2"></i>(619) 786-7534
-                            </a>
+                    <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-1.5 md:py-2 px-2 md:px-4 rounded-full transition whitespace-nowrap text-xs md:text-base max-w-[180px] truncate inline-block text-center">
+                        <i class="fas fa-phone mr-1 md:mr-2"></i>(619) 786-7534
+                    </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-8">
                     <a href="tel:6197867534" class="md:hidden bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
-                        <i class="fas fa-phone mr-2"></i>(619) 786-7534
+                        <i class="fas fa-phone mr-2"></i>Call
                     </a>
                     <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
                         <i class="fas fa-bars"></i>
@@ -49,8 +49,11 @@
 
     <!-- Training Section -->
     <section class="py-16 relative">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center opacity-10"></div>
-        <div class="container mx-auto px-4 relative">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-white via-white/70 to-transparent z-10"></div>
+            <div class="absolute inset-0 bg-[url('assets/images/bg-training.jpg')] bg-cover bg-center opacity-75 z-0"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-20">
             <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Training Programs</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
@@ -185,35 +188,37 @@
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
             menu.classList.toggle('block');
+        }
             
-            // Close when clicking outside
-            document.addEventListener('click', function(e) {
-                if (!e.target.closest('#mobile-menu') && !e.target.closest('button[onclick="toggleMobileMenu()"]')) {
-                    menu.classList.add('hidden');
-                    menu.classList.remove('block');
-                }
-            });
+            // Make mobile menu sticky to header and close on scroll down
+        document.addEventListener('DOMContentLoaded', () => {
+            const menu = document.getElementById('mobile-menu');
+            const header = document.querySelector('header');
+            let lastScrollY = window.scrollY;
 
-            // Close when scrolling past menu
-            let lastScrollPos = window.scrollY;
-            const scrollHandler = () => {
-                const currentScrollPos = window.scrollY;
-                const menuBottom = menu.offsetTop + menu.offsetHeight;
-                
-                if (currentScrollPos > menuBottom || Math.abs(currentScrollPos - lastScrollPos) > 50) {
-                    menu.classList.add('hidden');
-                    menu.classList.remove('block');
-                    window.removeEventListener('scroll', scrollHandler);
+            // Make header sticky
+            header.classList.add('sticky', 'top-0', 'z-50', 'bg-gray-100');
+
+            window.addEventListener('scroll', () => {
+                // Close mobile menu on scroll down
+                if (window.scrollY > lastScrollY) {
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                        menu.classList.remove('block');
+                    }
                 }
                 lastScrollPos = currentScrollPos;
-            };
-            window.addEventListener('scroll', scrollHandler);
-        }
+            });
+            
+        });
     </script>
     <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200 fixed top-16 left-0 right-0 z-50 shadow-lg">
             <ul class="space-y-4">
+                <li><a href="index.html" class="block hover:text-blue-200 transition">Home</a></li>
                 <li><a href="instructors.html" class="block hover:text-blue-200 transition">Instructors</a></li>
                 <li><a href="reference-materials.html" class="block hover:text-blue-200 transition">Reference Materials</a></li>
+                <li><a href="faq.html" class="block hover:text-blue-200 transition">FAQs</a></li>
+                <li><a href="contact.html" class="block hover:text-blue-200 transition">Contact</a></li>
             </ul>
     </div>
 </body>
