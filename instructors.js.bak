@@ -8,18 +8,19 @@ const instructors = [
         bookingLink: "https://calendly.com/johndoe/lesson"
     },
     {
-        name: "Josh Friedman",
+        name: "Josh Fried",
         credentials: "CFI, MEI",
-        photo: "assets/images/Instructors/Josh Friedman2.jpg",
+        photo: "assets/images/instructor-jane.jpg",
         specialties: ["Multi-Engine", "Flight Instructor", "Commercial Pilot"],
         bio: "Jane specializes in multi-engine training and advanced maneuvers.\n\nShe has a background in commercial aviation.",
         bookingLink: "https://calendly.com/janesmith/lesson"
     },
     {
-        name: "Cameron Oakley",
+        name: "Michael Brown",
         credentials: "CFI, CFII",
-        photo: "assets/images/Instructors/Cameron Oakley.jpg",
+        photo: "assets/images/instructor-michael.jpg",
         specialties: ["Instrument Rating", "Flight Instructor", "Certified Flight Instructor Instrument"],
+        aircraft: ["Cessna 182", "Cirrus SR22"],
         bio: "Michael is an expert in instrument training and cross-country flights.\n\nHe focuses on building pilot confidence.",
         bookingLink: "https://calendly.com/michaelbrown/lesson"
     }
