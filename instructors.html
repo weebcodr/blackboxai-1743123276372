@@ -62,7 +62,7 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">New Vision Aviation</h3>
+                    <h3 class="text-xl font-bold mb-4">New Vision Aviation, LLC</h3>
                     <p>3717 John J Montgomery Dr<br>San Diego, CA 92123</p>
                 </div>
                 <div>
@@ -138,7 +138,7 @@
                 <li><a href="contact.html" class="block hover:text-blue-200 transition">Contact</a></li>
             </ul>
     </div>
-    <script src="instructors.js"></script>
+    <script src="./instructors.js"></script>
     <script>
         // Load instructor data and generate cards
         document.addEventListener('DOMContentLoaded', function() {
@@ -160,14 +160,7 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <h4 class="font-medium text-gray-800 mb-1">Aircraft:</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    ${instructor.aircraft.map(ac => 
-                                        `<span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">${ac}</span>`
-                                    ).join('')}
-                                </div>
-                            </div>
+                
 
                             <div class="mb-4 text-gray-700 space-y-3">
                                 ${instructor.bio.split('\n\n').map(para => 
