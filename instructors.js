@@ -1,6 +1,6 @@
 const instructors = [
     {
-        name: "Michael Mourer",
+        name: "Michael Mourer - President - Chief Pilot",
         credentials: "CFI, CFII, MEI, ATP",
         photo: "assets/images/Instructors/Michael.jpg",
         specialties: ["Private Pilot", "Instrument Rating", "Commercial Pilot"],
@@ -8,21 +8,14 @@ const instructors = [
         bookingLink: "https://newvisionaviation.youcanbook.me/"
     },
     {
-        name: "Josh Friedman",
-        credentials: "CFI, MEI",
-        photo: "assets/images/Instructors/Josh Friedman2.jpg",
-        specialties: ["Multi-Engine", "Flight Instructor", "Commercial Pilot"],
-        bio: "Jane specializes in multi-engine training and advanced maneuvers.\n\nShe has a background in commercial aviation.",
-        bookingLink: "https://calendly.com/janesmith/lesson"
-    },
-    {
-        name: "Cameron Oakley",
+        name: "Josh Friedman - Flight Instructor",
         credentials: "CFI, CFII",
-        photo: "assets/images/Instructors/Cameron Oakley.jpg",
-        specialties: ["Instrument Rating", "Flight Instructor", "Certified Flight Instructor Instrument"],
-        bio: "Michael is an expert in instrument training and cross-country flights.\n\nHe focuses on building pilot confidence.",
-        bookingLink: "https://calendly.com/michaelbrown/lesson"
+        photo: "assets/images/Instructors/Josh Friedman2.jpg",
+        specialties: ["Private", "Single Engine Commercial"],
+        bio: "Let's go flying! Since I was a kid I dreamed of becoming a pilot. Unfortunately at the time I didn't know any and it seemed impossible. All of that has changed! I'm now a part of the aviation community. So whether you're interested in a new hobby and sailing seems a bit too slow, or you're pursuing a career path such as myself, we'll work together to make you a safe and competent pilot. There's no field like it, and the industry is growing fast. Now is the time!",
+        bookingLink: "https://joshua-friedman.youcanbook.me/"
     },
+    
     {
         name: "Oliver Emde - Flight Instructor",
         credentials: "CFI",
