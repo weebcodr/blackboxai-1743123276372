@@ -4,7 +4,7 @@ const instructors = [
         credentials: "CFI, CFII, MEI, ATP",
         photo: "assets/images/Instructors/Michael.jpg",
         specialties: ["Private Pilot", "Instrument Rating", "Commercial Pilot"],
-        bio: "John has over 15 years of experience as a flight instructor.\n\nHe is passionate about teaching and safety.",
+        bio: "I started New Vision Aviation with the idea that a group of likeminded instructors would work together to maintain a high level of training in a cooperative environment to benefit the student. My colleagues and I ensure this happens by continuing to expand our education and knowledge in the industry. I also promote and support a custom tailored training program to meet the needs of the individual student.",
         bookingLink: "https://newvisionaviation.youcanbook.me/"
     },
     {
