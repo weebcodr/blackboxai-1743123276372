@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Reference Materials | San Diego Flight School</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -22,29 +22,30 @@
                     <a href="index.html">
                         <img src="assets/images/logo.svg" 
                              alt="Flight School Logo"
-                             class="h-14 w-auto object-contain hover:scale-105 transition-transform">
+                             class="h-14 w-auto object-contain hover:scale-105 transition-transform" />
                     </a>
                     <nav class="hidden md:block ml-auto mr-8">
-                    <ul class="flex space-x-8 items-center">
-                        <li><a href="training.html" class="hover:text-blue-200 transition">Training</a></li>
-                        <li><a href="instructors.html" class="hover:text-blue-200 transition">Instructors</a></li>
-                        <li><a href="reference-materials.html" class="hover:text-blue-200 transition">Reference Materials</a></li>
-                        <li><a href="faq.html" class="hover:text-blue-200 transition">FAQs</a></li>
-                        <li>
-                            <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-1.5 md:py-2 px-2 md:px-4 rounded-full transition whitespace-nowrap text-xs md:text-base">
-                                <i class="fas fa-phone mr-1 md:mr-2"></i>(619) 786-7534
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="flex items-center space-x-8">
-                    <a href="tel:6197867534" class="md:hidden bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
-                        <i class="fas fa-phone mr-2"></i>Call
-                    </a>
-                
-                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
+                        <ul class="flex space-x-8 items-center">
+                            <li><a href="training.html" class="hover:text-blue-200 transition">Training</a></li>
+                            <li><a href="instructors.html" class="hover:text-blue-200 transition">Instructors</a></li>
+                            <li><a href="reference-materials.html" class="hover:text-blue-200 transition">Reference Materials</a></li>
+                            <li><a href="faq.html" class="hover:text-blue-200 transition">FAQs</a></li>
+                            <li>
+                                <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-1.5 md:py-2 px-2 md:px-4 rounded-full transition whitespace-nowrap text-xs md:text-base">
+                                    <i class="fas fa-phone mr-1 md:mr-2"></i>(619) 786-7534
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex items-center space-x-8">
+                        <a href="tel:6197867534" class="md:hidden bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
+                            <i class="fas fa-phone mr-2"></i>Call
+                        </a>
+                        <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -53,42 +54,113 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Aviation Reference Materials</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">FAA Regulations</h3>
-                    <ul class="space-y-3">
-                        <li><a href="https://www.faa.gov/regulations_policies" class="text-blue-600 hover:underline">FAR Part 61 - Certification: Pilots, Flight Instructors</a></li>
-                        <li><a href="https://www.faa.gov/regulations_policies" class="text-blue-600 hover:underline">FAR Part 91 - General Operating Rules</a></li>
-                        <li><a href="https://www.faa.gov/regulations_policies" class="text-blue-600 hover:underline">Aeronautical Information Manual (AIM)</a></li>
+                    <h3 class="text-xl font-bold mb-4">Flight Training Materials</h3>
+                    <ul class="space-y-3 text-blue-600">
+                        <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Instruments and Equipment - AC 91.67</a></li>
+                        <li><a href="assets/images/reference materials/Aircraft Checkout Form.pdf" download class="hover:underline">Aircraft Checkout Form</a></li>
+                        <li><a href="assets/images/reference materials/Airport signs and markings quiz.pdf" download class="hover:underline">Airport signs and markings quiz</a></li>
+                        <li><a href="assets/images/reference materials/Airport Signs and Markings.pdf" download class="hover:underline">Airport Signs and Markings</a></li>
+                        <li><a href="assets/images/reference materials/Airpsace Diagram.pdf" download class="hover:underline">Airpsace Diagram</a></li>
+                        <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
+                        <li><a href="assets/images/reference materials/Crosswind Component Graph.pdf" download class="hover:underline">Crosswind Component Graph</a></li>
+                        <li><a href="assets/images/reference materials/FR Quiz.pdf" download class="hover:underline">FR Quiz</a></li>
+                        <li><a href="assets/images/reference materials/G1000 Failures and Emergency Procedures.pdf" download class="hover:underline">G1000 Failures and Emergency Procedures</a></li>
+                        <li><a href="assets/images/reference materials/G1000 Questionnaire.pdf" download class="hover:underline">G1000 Questionnaire</a></li>
+                        <li><a href="assets/images/reference materials/High Performance Checkout.pdf" download class="hover:underline">High Performance Checkout</a></li>
+                        <li><a href="assets/images/reference materials/HighPerformanceCheckout.pdf" download class="hover:underline">HighPerformanceCheckout</a></li>
+                        <li><a href="assets/images/reference materials/Landing at KMYF.pdf" download class="hover:underline">Landing at KMYF</a></li>
+                        <li><a href="assets/images/reference materials/Local Freq.pdf" download class="hover:underline">Local Freq</a></li>
+                        <li><a href="assets/images/reference materials/METAR.pdf" download class="hover:underline">METAR</a></li>
+                       
+                        <li><a href="assets/images/reference materials/Retractable landing gear system for the 172RG.pdf" download class="hover:underline">Retractable landing gear system for the 172RG</a></li>
+                        <li><a href="assets/images/reference materials/Sample METARs and FAFs.pdf" download class="hover:underline">Sample METARs and FAFs</a></li>
+                        <li><a href="assets/images/reference materials/Turbo Charging.pdf" download class="hover:underline">Turbo Charging</a></li>
+                        <li><a href="assets/images/reference materials/Understanding Constant Speed Props.pdf" download class="hover:underline">Understanding Constant Speed Props</a></li>
+                        <li><a href="assets/images/reference materials/Weather Charts Explained.pdf" download class="hover:underline">Weather Charts Explained</a></li>
+                        <li><a href="assets/images/reference materials/Weather Products Information.pdf" download class="hover:underline">Weather Products Information</a></li>
+                        <li><a href="assets/images/reference materials/Weight and Balance Performance.pdf" download class="hover:underline">Weight and Balance Performance</a></li>
                     </ul>
                 </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                   
+                   
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Private Pilot</h3>
+                        <ul class="space-y-3">
+                        
+                        </ul>
+                    </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">Study Resources</h3>
-                    <ul class="space-y-3">
-                        <li><a href="https://www.faa.gov/pilots" class="text-blue-600 hover:underline">FAA Pilot's Handbook</a></li>
-                        <li><a href="https://www.faa.gov/training_testing" class="text-blue-600 hover:underline">Knowledge Test Guides</a></li>
-                        <li><a href="https://www.faa.gov/air_traffic/flight_info/aeronav" class="text-blue-600 hover:underline">Aeronautical Charts</a></li>
-                    </ul>
-                </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Instrument</h3>
+                        <ul class="space-y-3">
+                        
+                        </ul>
+                    </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">Flight Training Resources</h3>
-                    <ul class="space-y-3">
-                        <li><a href="https://www.aopa.org/training-and-safety" class="text-blue-600 hover:underline">AOPA Training Resources</a></li>
-                        <li><a href="https://www.sportys.com/pilotshop" class="text-blue-600 hover:underline">Flight Training Materials</a></li>
-                        <li><a href="https://www.faa.gov/uas" class="text-blue-600 hover:underline">Drone Pilot Resources</a></li>
-                    </ul>
-                </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Commericial Single Engine</h3>
+                        <ul class="space-y-3">
+                        
+                        </ul>
+                    </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">Weather & Planning</h3>
-                    <ul class="space-y-3">
-                        <li><a href="https://www.aviationweather.gov" class="text-blue-600 hover:underline">Aviation Weather Center</a></li>
-                        <li><a href="https://www.1800wxbrief.com" class="text-blue-600 hover:underline">Flight Service</a></li>
-                        <li><a href="https://www.faa.gov/air_traffic/flight_info" class="text-blue-600 hover:underline">NOTAMs & TFRs</a></li>
-                    </ul>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Commericial Multi Engine</h3>
+                        <ul class="space-y-3">
+                        
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Certified Flight Instructor</h3>
+                        <ul class="space-y-3">
+                        
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Certified Flight Instructor(CFI)</h3>
+                        <ul class="space-y-3">
+                        
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Certified Flight Instructor Instrument(CFII)</h3>
+                        <ul class="space-y-3">
+                        
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4"> Additional Training Resources</h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.aopa.org" class="text-blue-600 hover:underline">AOPA</a></li>
+                            <li><a href="https://www.faa.gov/uas" class="text-blue-600 hover:underline">Drone Pilot Resources</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">FAA Study Resources</h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.faa.gov/pilots" class="text-blue-600 hover:underline">FAA Pilot's Handbook</a></li>
+                            <li><a href="https://www.faa.gov/training_testing" class="text-blue-600 hover:underline">Knowledge Test Guides</a></li>
+                            <li><a href="https://www.faa.gov/air_traffic/flight_info/aeronav" class="text-blue-600 hover:underline">Aeronautical Charts</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <h3 class="text-xl font-bold mb-4">Weather & Planning</h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.aviationweather.gov" class="text-blue-600 hover:underline">Aviation Weather Center</a></li>
+                            <li><a href="https://www.1800wxbrief.com" class="text-blue-600 hover:underline">Flight Service</a></li>
+                            <li><a href="https://www.faa.gov/air_traffic/flight_info" class="text-blue-600 hover:underline">NOTAMs & TFRs</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,7 +206,8 @@
                 </a>
                 <p>&copy; 2025 New Vision Aviation. All rights reserved.</p>
                 <p>
-                    <a href="terms.html">Terms of Use</a> | <a href="" Policy</p>
+                    <a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy Policy</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -145,38 +218,16 @@
             menu.classList.toggle('hidden');
             menu.classList.toggle('block');
         }
-            
-            // Make mobile menu sticky to header and close on scroll down
-        document.addEventListener('DOMContentLoaded', () => {
-            const menu = document.getElementById('mobile-menu');
-            const header = document.querySelector('header');
-            let lastScrollY = window.scrollY;
-
-            // Make header sticky
-            header.classList.add('sticky', 'top-0', 'z-50', 'bg-gray-100');
-
-            window.addEventListener('scroll', () => {
-                // Close mobile menu on scroll down
-                if (window.scrollY > lastScrollY) {
-                    if (!menu.classList.contains('hidden')) {
-                        menu.classList.add('hidden');
-                        menu.classList.remove('block');
-                    }
-                }
-                lastScrollPos = currentScrollPos;
-            });
-            
-        });
     </script>
     <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200 fixed top-16 left-0 right-0 z-50 shadow-lg">
-            <ul class="space-y-4">
-                <li><a href="index.html" class="hover:text-blue-200 transition">Home</a></li>
-                <li><a href="training.html" class="block hover:text-blue-200 transition">Training</a></li>
-                <li><a href="instructors.html" class="block hover:text-blue-200 transition">Instructors</a></li>
-                <li><a href="reference-materials.html" class="block hover:text-blue-200 transition">Reference Materials</a></li>
-                <li><a href="faq.html" class="block hover:text-blue-200 transition">FAQs</a></li>
-                <li><a href="contact.html" class="block hover:text-blue-200 transition">Contact</a></li>
-            </ul>
+        <ul class="space-y-4">
+            <li><a href="index.html" class="block hover:text-blue-200 transition">Home</a></li>
+            <li><a href="training.html" class="block hover:text-blue-200 transition">Training</a></li>
+            <li><a href="instructors.html" class="block hover:text-blue-200 transition">Instructors</a></li>
+            <li><a href="reference-materials.html" class="block hover:text-blue-200 transition">Reference Materials</a></li>
+            <li><a href="faq.html" class="block hover:text-blue-200 transition">FAQs</a></li>
+            <li><a href="contact.html" class="block hover:text-blue-200 transition">Contact</a></li>
+        </ul>
     </div>
 </body>
 </html>
