@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Recipient email
-    $recipient = "michael@newvisionaviation.com";
+    $recipient = "joeldavilaromero18@gmail.com";
 
     // Email subject
     $email_subject = "New contact from $name: $subject";

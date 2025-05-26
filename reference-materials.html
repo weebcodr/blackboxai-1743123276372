@@ -11,6 +11,27 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+    .ref-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ref-title {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.25rem; /* text-xl */
+    margin-bottom: 0.5rem;
+  }
+  .ref-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #4b5563; /* Tailwind gray-600 */
+  }
+  .ref-item.active .ref-content {
+    max-height: 1000px; /* large enough to show content */
+    margin-top: 0.5rem;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -51,52 +72,79 @@
     </header>
 
     <!-- Reference Materials Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white ">
+        
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Aviation Reference Materials</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4">Flight Training Materials</h3>
-                    <ul class="space-y-3 text-blue-600">
-                        
-                        
-                        
-                        
-                        
-                
-                       
-                        <li><a href="assets/images/reference materials/Retractable landing gear system for the 172RG.pdf" download class="hover:underline">Retractable landing gear system for the 172RG</a></li>
-                        <li><a href="assets/images/reference materials/Sample METARs and FAFs.pdf" download class="hover:underline">Sample METARs and FAFs</a></li>
-                        <li><a href="assets/images/reference materials/Turbo Charging.pdf" download class="hover:underline">Turbo Charging</a></li>
-                        <li><a href="assets/images/reference materials/Understanding Constant Speed Props.pdf" download class="hover:underline">Understanding Constant Speed Props</a></li>
-                        <li><a href="assets/images/reference materials/Weather Charts Explained.pdf" download class="hover:underline">Weather Charts Explained</a></li>
-                        <li><a href="assets/images/reference materials/Weather Products Information.pdf" download class="hover:underline">Weather Products Information</a></li>
-                        <li><a href="assets/images/reference materials/Weight and Balance Performance.pdf" download class="hover:underline">Weight and Balance Performance</a></li>
-                    </ul>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-8">
+            <div class="max-w-3x1 mx-auto">
+               
                    
                    
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Private Pilot</h3>
-                        <ul class="space-y-3 text-blue-600">
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Private Pilot</h3>
+                                    <ul class="space-y-3 text-blue-600 ref-content">
+                                    <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
+                                    <li><a href="assets/images/reference materials/Aircraft Checkout Form.pdf" download class="hover:underline">Aircraft Checkout Form</a></li>
+                                    <li><a href="assets/images/reference materials/Airport signs and markings quiz.pdf" download class="hover:underline">Airport signs and markings quiz</a></li>
+                                    <li><a href="assets/images/reference materials/Airport Signs and Markings.pdf" download class="hover:underline">Airport Signs and Markings</a></li>
+                                    <li><a href="assets/images/reference materials/Airpsace Diagram.pdf" download class="hover:underline">Airpsace Diagram</a></li>
+                                    <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
+                                    <li><a href="assets/images/reference materials/Crosswind Component Graph.pdf" download class="hover:underline">Crosswind Component Graph</a></li>
+                                    <li><a href="assets/images/reference materials/Landing at KMYF.pdf" download class="hover:underline">Landing at KMYF</a></li>
+                                    <li><a href="assets/images/reference materials/Sample METARs and TAFs.pdf" download class="hover:underline">Sample METARs and TAFs</a></li>
+                                    <li><a href="assets/images/reference materials/Weight and Balance Performance.pdf" download class="hover:underline">Weight & Balance and Performance Chart</a></li>
+                                    <li><a href="https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28A_FAA_Web.pdf" class="text-blue-600 hover:underline">Aviation Weather Handbook</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Instrument</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
                             <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
-                            <li><a href="assets/images/reference materials/Aircraft Checkout Form.pdf" download class="hover:underline">Aircraft Checkout Form</a></li>
-                            <li><a href="assets/images/reference materials/Airport signs and markings quiz.pdf" download class="hover:underline">Airport signs and markings quiz</a></li>
-                             <li><a href="assets/images/reference materials/Airport Signs and Markings.pdf" download class="hover:underline">Airport Signs and Markings</a></li>
-                             <li><a href="assets/images/reference materials/Airpsace Diagram.pdf" download class="hover:underline">Airpsace Diagram</a></li>
                             <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
-                             <li><a href="assets/images/reference materials/Crosswind Component Graph.pdf" download class="hover:underline">Crosswind Component Graph</a></li>
-                             <li><a href="assets/images/reference materials/Landing at KMYF.pdf" download class="hover:underline">Landing at KMYF</a></li>
-                             <li><a href="assets/images/reference materials/Sample METARs and TAFs.pdf" download class="hover:underline">Sample METARs and TAFs</a></li>
+                            <li><a href="assets/images/reference materials/Weight and Balance Performance.pdf" download class="hover:underline">Weight & Balance and Performance Chart</a></li>
+                            <li><a href="https://aeronav.faa.gov/d-tpp/2506/frntmatter.pdf" class="text-blue-600 hover:underline">Terminal Procedures Table of Contents</a></li>
+                            <li><a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/FAA-H-8083-16B.pdf" class="text-blue-600 hover:underline">Instrument Procedures Handbook</a></li>
+                            <li><a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf" class="text-blue-600 hover:underline">Instrument Flying Handbook</a></li>
+                            <li><a href="https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28A_FAA_Web.pdf" class="text-blue-600 hover:underline">Aviation Weather Handbook</a></li>
                        
                         </ul>
                     </div>
 
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Instrument</h3>
-                        <ul class="space-y-3 text-blue-600">
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Commericial Single Engine</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
+                            <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
+                            <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
+                            <li><a href="assets/images/reference materials/Weight and Balance Performance.pdf" download class="hover:underline">Weight & Balance and Performance Chart</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Commericial Multi Engine</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
+                            <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
+                            <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
+                            <li><a href="assets/images/reference materials/Weight and Balance Performance.pdf" download class="hover:underline">Weight & Balance and Performance Chart</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Certified Flight Instructor(CFI)</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
+                            <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
+                            <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
+                            
+
+                        </ul>
+                    </div>
+
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Certified Flight Instructor Instrument(CFII)</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
                             <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
                             <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
 
@@ -104,85 +152,55 @@
                         </ul>
                     </div>
 
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Commericial Single Engine</h3>
-                        <ul class="space-y-3 text-blue-600">
-                            <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
-                            <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Commericial Multi Engine</h3>
-                        <ul class="space-y-3 text-blue-600">
-                            <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
-                            <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Certified Flight Instructor(CFI)</h3>
-                        <ul class="space-y-3 text-blue-600">
-                            <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
-                            <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Certified Flight Instructor Instrument(CFII)</h3>
-                        <ul class="space-y-3 text-blue-600">
-                            <li><a href="assets/images/reference materials/91.213.pdf" download class="hover:underline"> Inoperative Equipment - AC 91.67</a></li>
-                            <li><a href="assets/images/reference materials/AirworthinessChecklist.pdf" download class="hover:underline">AirworthinessChecklist</a></li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Complex, High Performace and TAA Training</h3>
-                        <ul class="space-y-3 text-blue-600">
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Complex, High Performace and TAA Training</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
                         <li><a href="assets/images/reference materials/High Performance Training.pdf" download class="hover:underline">High Performance Training</a></li>
                         <li><a href="assets/images/reference materials/HighPerformanceCheckout.pdf" download class="hover:underline">High Performance Checkout</a></li>
-                       
-
+                        <li><a href="assets/images/reference materials/Retractable landing gear system for the 172RG.pdf" download class="hover:underline">Retractable landing gear system for the 172RG</a></li> 
+                        <li><a href="assets/images/reference materials/Turbo Charging.pdf" download class="hover:underline">Turbo Charging</a></li>
+                        <li><a href="assets/images/reference materials/Understanding Constant Speed Props.pdf" download class="hover:underline">Understanding Constant Speed Props</a></li>
+                        <li><a href="assets/images/reference materials/G1000 Failures and Emergency Procedures.pdf" download class="hover:underline">G1000 Guide to System Failures</a></li>
+                        <li><a href="assets/images/reference materials/G1000 Questionnaire.pdf" download class="hover:underline">G1000 Questionnaire</a></li>
 
 
                         </ul>
                     </div>
 
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4"> Additional Training Resources</h3>
-                        <ul class="space-y-3">
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4"> Additional Training Resources</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
                             <li><a href="https://www.aopa.org" class="text-blue-600 hover:underline">AOPA</a></li>
                             <li><a href="https://www.faa.gov/uas" class="text-blue-600 hover:underline">Drone Pilot Resources</a></li>
                             <li><a href="assets/images/reference materials/FR Quiz.pdf" download class="text-blue-600 hover:underline">Flight Review Quiz</a></li>
                             <li><a href="assets/images/reference materials/Local Freq.pdf" download class="text-blue-600 hover:underline">Local Freq</a></li>
-                            <li><a href="assets/images/reference materials/METAR.pdf" download class="text-blue-600 hover:underline">METAR Decoding</a></li>
+                            <li><a href="assets/images/reference materials/Weight and Balance Performance.pdf" download class="text-blue-600 hover:underline">Weight & Balance and Performance Chart</a></li>
 
                         </ul>
                     </div>
 
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">FAA Study Resources</h3>
-                        <ul class="space-y-3">
-                            <li><a href="https://www.faa.gov/pilots" class="text-blue-600 hover:underline">FAA Pilot's Handbook</a></li>
-                            <li><a href="https://www.faa.gov/training_testing" class="text-blue-600 hover:underline">Knowledge Test Guides</a></li>
-                            <li><a href="https://www.faa.gov/air_traffic/flight_info/aeronav" class="text-blue-600 hover:underline">Aeronautical Charts</a></li>
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">FAA Study Resources</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
+                            <li><a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf" class="text-blue-600 hover:underline">FAA Pilot's Handbook of Aeronautical Knowledge (PHAK)</a></li>
+                            <li><a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/00_afh_full.pdf" class="text-blue-600 hover:underline">FAA Airplane Flying Handbook(AFH)</a></li>
+                            <li><a href="https://aeronav.faa.gov/user_guide/cug-complete_20250220.pdf" class="text-blue-600 hover:underline">Aeronautical Chart Users' Guide</a></li>
+                            
                         </ul>
                     </div>
 
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                        <h3 class="text-xl font-bold mb-4">Weather & Planning</h3>
-                        <ul class="space-y-3">
+                    <div class="ref-item">
+                        <h3 class="ref-title text-xl font-bold mb-4">Weather & Planning</h3>
+                        <ul class="space-y-3 text-blue-600 ref-content">
                             <li><a href="https://www.aviationweather.gov" class="text-blue-600 hover:underline">Aviation Weather Center</a></li>
                             <li><a href="https://www.1800wxbrief.com" class="text-blue-600 hover:underline">Flight Service</a></li>
                             <li><a href="https://www.faa.gov/air_traffic/flight_info" class="text-blue-600 hover:underline">NOTAMs & TFRs</a></li>
+                            <li><a href="assets/images/reference materials/METAR.pdf" download class="text-blue-600 hover:underline">METAR Decoding</a></li>
+                            <li><a href="assets/images/reference materials/Weather Charts Explained.pdf" download class="text-blue-600 hover:underline">Weather Charts Explained</a></li>
+                            <li><a href="assets/images/reference materials/Weather Products Information.pdf" download class="text-blue-600 hover:underline">Weather Products Information</a></li>
+                            <li><a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/FAA-H-8083-16B.pdf" class="text-blue-600 hover:underline">Instrument Procedures Handbook</a></li>
+                            <li><a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf" class="text-blue-600 hover:underline">Instrument Flying Handbook</a></li>
+                            <li><a href="https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28A_FAA_Web.pdf" class="text-blue-600 hover:underline">Aviation Weather Handbook</a></li>
                         </ul>
                     </div>
                 </div>
@@ -191,12 +209,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-12">
+    <footer id="contact" class="bg-blue-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">New Vision Aviation, LLC</h3>
-                    <p>3717 John J Montgomery Dr<br>San Diego, CA 92123</p>
+                    <p>3717 John J Montgomery Dr<br />San Diego, CA 92123</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact Us</h3>
@@ -242,6 +260,36 @@
             menu.classList.toggle('hidden');
             menu.classList.toggle('block');
         }
+
+        // Make mobile menu sticky to header and close on scroll down
+        document.addEventListener('DOMContentLoaded', () => {
+            const menu = document.getElementById('mobile-menu');
+            const header = document.querySelector('header');
+            let lastScrollY = window.scrollY;
+
+            // Make header sticky
+            header.classList.add('sticky', 'top-0', 'z-50', 'bg-gray-100');
+
+            window.addEventListener('scroll', () => {
+                // Close mobile menu on scroll down
+                if (window.scrollY > lastScrollY) {
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                        menu.classList.remove('block');
+                    }
+                }
+                lastScrollY = window.scrollY;
+            });
+
+            // Reference Materials toggle functionality
+            const refTitles = document.querySelectorAll('.ref-title');
+            refTitles.forEach(title => {
+                title.addEventListener('click', () => {
+                    const refItem = title.parentElement;
+                    refItem.classList.toggle('active');
+                });
+            });
+        });
     </script>
     <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200 fixed top-16 left-0 right-0 z-50 shadow-lg">
         <ul class="space-y-4">
