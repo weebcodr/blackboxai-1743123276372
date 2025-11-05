@@ -24,14 +24,7 @@ const instructors = [
         bio: "Coming from a family of pilots I've always known what I wanted to do with my life. I grew up in Maui, Hawaii, where I embarked on my aviation journey at the age of 17. Flying in Maui with some of the strongest crosswinds in the world I perfected my craft. Since then, I have relocated to California to further pursue my dream. Whether you're pursuing a career or learning for fun, I am eager to share my knowledge to help you become a safe and knowledgeable pilot!",
         bookingLink: "https://oliveremde11.youcanbook.me/"
     },
-    {
-        name: "Jesse Balasek - Flight Instructor",
-        credentials: "CFI, CFII",
-        photo: "assets/images/Instructors/Jesse Balasek.jpg",
-        specialties: ["Private", "Instrument", "Single Engine Commercial"],
-        bio: "If you love what you do, you'll never work a day in your life. Flying has been my true passion for as long as I can remember. Both of my fathers were Professional Pilots, and I've always dreamed of being as great as they were one day. Ive learned that being a great pilot starts with having a great instructor and learning that safety is the most important thing. I want to be there to help guide my students to be the safest and best version of themselves as Pilots. Giddy Up",
-        bookingLink: "https://jessebalasek.youcanbook.me/"
-    },
+   
     {
         name: "Daniel Durrand - Flight Instructor",
         credentials: "CFI, CFII",
