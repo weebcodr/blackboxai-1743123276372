@@ -34,7 +34,7 @@ const instructors = [
         photo: "assets/images/Instructors/Daniel Durrand.jpg",
         specialties: ["Private", "Instrument", "Single Engine Commercial", "Flight Review", "Instrument Proficiency Check"],
         approvedAircraft: ["C172", "PA28"], 
-        bio: "Let's get you flying! When I started flight training, I was a weekend warrior with an insurance day job, but what started as a fun and challenging hobby became an exciting passion and rewarding career. Regardless of your goals, flying offers you the opportunity to tackle new challenges, embrace adventure, and (literally) see the world Flight Reviewom a new perspective. Whether you're looking to get in the plane just for fun, or to eventually fly professionally, I will help you become a safe and capable pilot. I look forward to sharing the cockpit with you!",
+        bio: "Let's get you flying! When I started flight training, I was a weekend warrior with an insurance day job, but what started as a fun and challenging hobby became an exciting passion and rewarding career. Regardless of your goals, flying offers you the opportunity to tackle new challenges, embrace adventure, and (literally) see the world from a new perspective. Whether you're looking to get in the plane just for fun, or to eventually fly professionally, I will help you become a safe and capable pilot. I look forward to sharing the cockpit with you!",
         bookingLink: "https://cfidurrand.youcanbook.me/"
     },
     {
