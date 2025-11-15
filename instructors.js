@@ -49,7 +49,7 @@ const instructors = [
     {
         name: "Andrew Larson - Flight Instructor",
         credentials: "CFI, CFII",
-        photo: "assets/images/Instructors/AndrewL.jpg",
+        photo: "assets/images/Instructors/AndrewL.JPG",
         specialties: ["Private", "Instrument", "Single Engine Commercial", "FR", "IPC"],
         approvedAircraft: ["C172"],
         bio: "Flying is a never ending journey of experiences and learning. I started my journey at 17 and continued onto Embry Riddle Aeronautical University where I grew my foundation and got a Bachelors in Aeronautical Science. My passion for aviation pushes me to keep learning and fine tune my skills to help train safe and confident pilots. Let’s hit the skies and help you achieve your aviation goals.",
