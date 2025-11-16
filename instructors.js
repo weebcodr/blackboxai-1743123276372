@@ -41,7 +41,7 @@ const instructors = [
         name: "Mason Liu - Flight Instructor",
         credentials: "CFI, CFII",
         photo: "assets/images/Instructors/Mason Liu1.jpg",
-        specialties: ["Private", "Instrument", "Single Engine Commercial", "Flight Review", "Instrument Proficiency Check", "High Performance", "Complex"],
+        specialties: ["Private", "Instrument", "Single Engine Commercial", "Flight Review", "Instrument Proficiency Check", "High Performance"],
         approvedAircraft: ["C172", "C182FG", "PA28"], 
         bio: "Flying has always felt like an impossible dream to me. Yet, after earning my PhD in physics and pursuing a career in finance, I decided to start flight training. I discovered where my true passion lies. My academic background and professional experience allow me to connect with both younger learners and those with rich life experience. I would be thrilled to help you achieve your goals and become a safe, capable pilot. Let's take to the skies!",
         bookingLink: "https://masonliu.youcanbook.me/"
