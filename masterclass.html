@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masterclass | San Diego Flight School</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-gray-100 text-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 md:py-5">
+            <div class="flex justify-between items-center">
+                <a href="./">
+                    <img src="assets/images/logo.svg" alt="Flight School Logo" class="h-14 w-auto object-contain hover:scale-105 transition-transform" />
+                </a>
+                <nav class="hidden md:block ml-auto mr-8">
+                    <ul class="flex space-x-8 items-center">
+                        <li><a href="masterclass.html" class="text-blue-600 font-bold transition">Masterclass</a></li>
+                        <li><a href="training.html" class="hover:text-blue-600 transition">Training</a></li>
+                        <li><a href="instructors.html" class="hover:text-blue-600 transition">Instructors</a></li>
+                        <li><a href="reference-materials.html" class="hover:text-blue-600 transition">Reference Materials</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-600 transition">FAQs</a></li>
+                        <li>
+                            <a href="tel:6197867534" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-1.5 md:py-2 px-2 md:px-4 rounded-full transition whitespace-nowrap text-xs md:text-base">
+                                <i class="fas fa-phone mr-1 md:mr-2"></i>(619) 786-7534
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex items-center space-x-8">
+                    <a href="tel:6197867534" class="md:hidden bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition">
+                        <i class="fas fa-phone mr-2"></i>Call
+                    </a>
+                    <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Background Gradient -->
+        <div class="bg-gradient-to-t from-blue-950 to-blue-900 py-16 sm:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- HEADER SECTION: Even Tighter Spacing -->
+                <div class="flex flex-col items-center text-center mb-16">
+                    <!-- Title: Changed leading to none to reduce vertical box height -->
+                    <h1 class="text-4xl font-extrabold text-white sm:text-5xl mb-0 leading-none z-10 relative">
+                        New Vision Aviation
+                    </h1>
+                    
+                    <!-- Logo: Increased negative margins significantly (-mt-12 and -mb-4) to compress the lockup -->
+                    <img src="assets/images/MasterLogo.svg" alt="New Vision Aviation" class="h-64 md:h-80 mx-auto -mt-12 -mb-4 object-contain drop-shadow-2xl relative z-0" />
+                    
+                    <!-- Subtitle -->
+                    <p class="mt-0 text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-blue-100 drop-shadow-md">
+                        Celebrating our graduates who have achieved their aviation dreams.
+                    </p>
+                </div>
+
+                <!-- Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 justify-items-center">
+
+                    <!-- Michael Mourer -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/MichaelMC.PNG" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Michael+Mourer'"
+                                 alt="Photo of Michael Mourer">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Michael Mourer
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">XOJET</p>
+                            <p class="text-md font-medium text-gray-300 italic">Captain</p>
+                        </div>
+                    </div>
+
+                    <!-- Travis Phillips -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/TravisMC.jpeg" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Travis+Phillips'"
+                                 alt="Photo of Travis Phillips">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Travis Phillips
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">United Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Steffen Kuhlmann -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/SteffenMC.JPG" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Steffen+Kuhlmann'"
+                                 alt="Photo of Steffen Kuhlmann">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Steffen Kuhlmann
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">United Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Arin Anthon -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/ArinMC.JPG" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Arin+Anthon'"
+                                 alt="Photo of Arin Anthon">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Arin Anthon
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">SkyWest Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">Captain</p>
+                        </div>
+                    </div>
+
+                    <!-- Luke Derbawka -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/LukeDMC.jpeg" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Luke+Derbawka'"
+                                 alt="Photo of Luke Derbawka">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Luke Derbawka
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">Delta Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Hector Torres -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/HectorMC.jpeg" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Hector+Torres'"
+                                 alt="Photo of Hector Torres">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Hector Torres
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">SkyWest Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Zackery Triplett -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/ZackeryMC.jpeg" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Zackery+Triplett'"
+                                 alt="Photo of Zackery Triplett">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Zackery Triplett
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">Delta Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Brandon Becker -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/BrandonMC.jpeg" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Brandon+Becker'"
+                                 alt="Photo of Brandon Becker">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Brandon Becker
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">Southwest Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Jacob Wick -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/JacobMC.jpeg" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Jacob+Wick'"
+                                 alt="Photo of Jacob Wick">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Jacob Wick
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">NetJets</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Luke Skiles -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/LukeSMC.PNG" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Luke+Skiles'"
+                                 alt="Photo of Luke Skiles">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Luke Skiles
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">CommuteAir</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Andrew Smart -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/AndrewMC.JPG" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Andrew+Smart'"
+                                 alt="Photo of Andrew Smart">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Andrew Smart
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">Allegiant Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                    <!-- Basilio Smith -->
+                    <div class="flex flex-col items-center text-center w-96 max-w-full">
+                        <div class="bg-blue-950 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-105 w-full border border-blue-800/30">
+                            <img class="w-full h-72 object-cover object-center" 
+                                 src="assets/images/masterclass/BasilioMC.jpg" 
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Basilio+Smith'"
+                                 alt="Photo of Basilio Smith">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-2xl font-bold mb-1 text-white tracking-wide">
+                                Basilio Smith
+                            </h3>
+                            <p class="text-lg font-semibold text-blue-200">SkyWest Airlines</p>
+                            <p class="text-md font-medium text-gray-300 italic">First Officer</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">New Vision Aviation, LLC</h3>
+                    <p>3717 John J Montgomery Dr<br />San Diego, CA 92123</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p><i class="fas fa-phone mr-2"></i> (619) 786-7534</p>
+                    <a href="contact.html" class="inline-block bg-white hover:bg-gray-100 text-blue-900 font-medium py-2 px-4 rounded-full mt-2 transition">Contact Us</a>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hours</h3>
+                    <p>Monday - Sunday: 8am - 8pm</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="https://www.tiktok.com/@new.vision.aviati" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-tiktok text-xl"></i></a>
+                    <a href="https://www.instagram.com/new_vision_aviation/" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="https://www.facebook.com/NewVisionAviation" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="https://youtube.com/channel/UCsmMwH7fEemWdk9wtccvhjQ" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-youtube text-xl"></i></a>
+                </div>
+                <a href="faq.html" class="inline-block bg-white hover:bg-gray-100 text-blue-900 font-medium py-2 px-6 rounded-full mb-4 transition">Frequently Asked Questions</a>
+                <p>&copy; 2026 New Vision Aviation LLC. All rights reserved.</p>
+                <p>
+                    <a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menu = document.getElementById('mobile-menu');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > lastScrollY) {
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                    }
+                }
+                lastScrollY = window.scrollY;
+            });
+        });
+    </script>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 text-gray-800 py-4 px-4 border-t border-gray-200 fixed top-16 left-0 right-0 z-50 shadow-lg">
+        <ul class="space-y-4">
+            <li><a href="index.html" class="hover:text-blue-200 transition">Home</a></li>
+            <li><a href="masterclass.html" class="text-blue-600 font-bold transition">Masterclass</a></li>
+            <li><a href="training.html" class="block hover:text-blue-600 transition">Training</a></li>
+            <li><a href="instructors.html" class="block hover:text-blue-600 transition">Instructors</a></li>
+            <li><a href="reference-materials.html" class="block hover:text-blue-600 transition">Reference Materials</a></li>
+            <li><a href="faq.html" class="block hover:text-blue-600 transition">FAQs</a></li>
+            <li><a href="contact.html" class="block hover:text-blue-600 transition">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
